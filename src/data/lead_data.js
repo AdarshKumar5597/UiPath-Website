@@ -1,0 +1,55 @@
+const LeadData = [
+    {
+        index:0,
+        src:"../assets/images/user.jpeg",
+        name:"Random"
+    },
+    {
+        index:1,
+        src:"../assets/images/user.jpeg",
+        name:"Random"
+    },
+    {
+        index:2,
+        src:"../assets/images/user.jpeg",
+        name:"Random"
+    },
+    {
+        index:3,
+        src:"../assets/images/user.jpeg",
+        name:"Random"
+    },
+    {
+        index:4,
+        src:"../assets/images/user.jpeg",
+        name:"Random"
+    },
+    {
+        index:5,
+        src:"../assets/images/user.jpeg",
+        name:"Random"
+    },
+    {
+        index:6,
+        src:"../assets/images/user.jpeg",
+        name:"Random"
+    },
+    {
+        index:7,
+        src:"../assets/images/user.jpeg",
+        name:"Random"
+    },
+    {
+        index:8,
+        src:"../assets/images/user.jpeg",
+        name:"Random"
+    },
+    {
+        index:9,
+        src:"../assets/images/user.jpeg",
+        name:"Random"
+    },
+
+]
+
+export default LeadData;
