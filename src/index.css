@@ -88,23 +88,31 @@ code {
   background-clip: padding-box;
   border-radius: 45px;
   padding: 40px;
+
   img {
     margin-bottom: 32px;
   }
 }
 
 @keyframes expandShrink {
-  0%, 100% {
+
+  0%,
+  100% {
     width: 20%;
   }
+
   50% {
     width: 80%;
   }
 }
+
 @keyframes ballMovement {
-  0%, 100% {
+
+  0%,
+  100% {
     left: calc(0.2*715px);
   }
+
   50% {
     left: calc(0.80*715px);
   }
@@ -113,6 +121,7 @@ code {
 .animate-width {
   animation: expandShrink 5s linear infinite;
 }
+
 .animate-ball {
   animation: ballMovement 5s linear infinite;
 }
@@ -134,19 +143,22 @@ code {
     border-bottom-color: black;
     border-right-color: black;
   }
-  25%{
+
+  25% {
     border-left-color: black;
     border-right-color: orange;
     border-bottom-color: black;
     border-top-color: black;
   }
+
   75% {
     border-left-color: black;
     border-top-color: black;
     border-bottom-color: orange;
     border-right-color: black;
   }
-  100%{
+
+  100% {
     border-left-color: orange;
     border-top-color: black;
     border-bottom-color: black;
@@ -162,12 +174,69 @@ code {
 
 @keyframes gradient {
   0% {
-      background-position: 0% 50%;
+    background-position: 0% 50%;
   }
+
   50% {
-      background-position: 100% 50%;
+    background-position: 100% 50%;
   }
+
   100% {
-      background-position: 0% 50%;
+    background-position: 0% 50%;
   }
+}
+
+.box {
+  width: 195px;
+  height: 225px;
+  border-radius: 5px;
+  position: relative;
+  overflow: hidden;
+  transform: translate3d(0, 0, 0);
+  background: linear-gradient(71deg, #080509, #1a171c, #080509);
+}
+
+.wave {
+  opacity: 1;
+  position: absolute;
+  top: 3%;
+  left: 50%;
+  background: #e50606;
+  width: 400px;
+  height: 400px;
+  margin-left: -200px;
+  margin-top: -200px;
+  transform-origin: 50% 48%;
+  border-radius: 35%;
+  animation: drift 10000ms infinite linear;
+}
+
+.box:after {
+  content: '';
+  display: block;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom,
+      rgba(#cd3d6d, 1),
+      rgba(#68b0f8, 0) 80%,
+      rgba(white, .5));
+  z-index: 11;
+  transform: translate3d(0, 0, 0);
+}
+
+@keyframes drift {
+  from {
+    transform: rotate(0deg);
+  }
+
+  from {
+    transform: rotate(360deg);
+  }
+}
+
+.slider {
+  max-width: 1080px;
+  border-radius: 2rem;
 }

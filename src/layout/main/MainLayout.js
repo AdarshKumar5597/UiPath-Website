@@ -142,11 +142,11 @@ const MainLayout = () => {
     return (
 
         <div className="w-screen min-h-screen bg-richblack-900 flex flex-col">
-            <Particles id="tsparticles" options={particlesOptions} init={init} />
+            <Particles id="tsparticles" options={particlesOptions} init={init} className="z-[-1]"/>
             <div className="w-[100vw] h-[10vh] bg-transparent">
                 <Navbar />
             </div>
-            <div className="w-[100vw] max-h-[90vh] overflow-y-scroll overflow-x-hidden">
+            <div className="w-[100vw] max-h-[90vh] overflow-y-scroll overflow-x-hidden scrollbar-hide">
                 <Home/>
                 <FooterSection/>
             </div>

@@ -6,9 +6,9 @@ const Motto = () => {
     const [hoveredIndex, setHoveredIndex] = useState(null);
 
     return (
-        <div className="w-[100vw] h-[90vh] flex flex-col justify-center items-center relative gap-y-5">
+        <div className="w-[100vw] h-[90vh] flex flex-col justify-center items-center gap-y-5">
             <div className='flex max-w-[1080px] w-[1080px] items-center px-5'>
-                <p className='font-oswald text-7xl text-orange-600 w-[400px]' style={{ backgroundImage: 'linear-gradient(45deg, red, orange, yellow)', WebkitBackgroundClip: 'text', color: 'transparent' }}>
+                <p className='font-oswald text-5xl text-orange-600 w-[400px]' style={{ backgroundImage: 'linear-gradient(45deg, red, orange, yellow)', WebkitBackgroundClip: 'text', color: 'transparent' }}>
                     Our Motto
                 </p>
                 <div className="flex relative items-center w-full">

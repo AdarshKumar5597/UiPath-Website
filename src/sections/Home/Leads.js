@@ -4,9 +4,9 @@ import UserPic from '../../assets/images/user.jpeg';
 
 const Leads = () => {
     return (
-        <div className="max-w-[1080px] mx-auto overflow-x-scroll">
-            <div className='flex max-w-[1080px] w-[1080px] items-center px-5 relative mt-32'>
-                <p className='font-oswald text-7xl text-orange-600 w-[400px]' style={{ backgroundImage: 'linear-gradient(45deg, red, orange, yellow)', WebkitBackgroundClip: 'text', color: 'transparent' }}>
+        <div className="w-[100vw] h-[90vh] flex flex-col justify-center items-center gap-y-5 mt-10">
+            <div className='flex max-w-[1080px] w-[1080px] items-center px-5'>
+                <p className='font-oswald text-5xl text-orange-600 w-[400px]' style={{ backgroundImage: 'linear-gradient(45deg, red, orange, yellow)', WebkitBackgroundClip: 'text', color: 'transparent' }}>
                     Our Leads
                 </p>
                 <div className="flex relative items-center w-full">
@@ -19,7 +19,7 @@ const Leads = () => {
                     </div>
                 </div>
             </div>
-            <div className="h-[500px] flex items-center gap-x-5 overflow-x-scroll">
+            <div className="h-[500px] flex gap-x-5 max-w-[1080px] overflow-x-scroll scrollbar-hide">
                 {LeadData.map((lead) => (
                     <div key={lead.index} className='w-[275px] h-[375px] bg-orange-500 rounded-lg flex-shrink-0 relative lead-card' >
                         <img src={UserPic} alt='lead' className="h-full w-full object-cover rounded-lg" />

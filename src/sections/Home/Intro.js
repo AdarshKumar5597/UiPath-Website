@@ -26,7 +26,7 @@ const Intro = () => {
     return (
         <div className="w-[100vw] h-[90vh] flex justify-center items-center">
             <div className="max-w-[1080px] flex justify-center items-center px-5">
-                <div className="w-[1080px] h-[400px] bg-orange-500 rounded-lg flex flex-col items-start relative gap-y-5 pl-20 justify-center">
+                <div className="w-[1080px] h-[400px] bg-[#ffa500] rounded-lg flex flex-col items-start relative gap-y-5 pl-20 justify-center">
                     <p className="text-9xl font-bold neumorphic-text">
                         UiPath
                     </p>
