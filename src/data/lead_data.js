@@ -2,52 +2,92 @@ const LeadData = [
     {
         index:0,
         src:"../assets/images/user.jpeg",
-        name:"Random"
+        name:"Random",
+        postion:"Position",
+        instagram:"URL",
+        facebook:"URL",
+        linkedin:"URL"
     },
     {
         index:1,
         src:"../assets/images/user.jpeg",
-        name:"Random"
+        name:"Random",
+        postion:"Position",
+        instagram:"URL",
+        facebook:"URL",
+        linkedin:"URL"
     },
     {
         index:2,
         src:"../assets/images/user.jpeg",
-        name:"Random"
+        name:"Random",
+        postion:"Position",
+        instagram:"URL",
+        facebook:"URL",
+        linkedin:"URL"
     },
     {
         index:3,
         src:"../assets/images/user.jpeg",
-        name:"Random"
+        name:"Random",
+        postion:"Position",
+        instagram:"URL",
+        facebook:"URL",
+        linkedin:"URL"
     },
     {
         index:4,
         src:"../assets/images/user.jpeg",
-        name:"Random"
+        name:"Random",
+        postion:"Position",
+        instagram:"URL",
+        facebook:"URL",
+        linkedin:"URL"
     },
     {
         index:5,
         src:"../assets/images/user.jpeg",
-        name:"Random"
+        name:"Random",
+        postion:"Position",
+        instagram:"URL",
+        facebook:"URL",
+        linkedin:"URL"
     },
     {
         index:6,
         src:"../assets/images/user.jpeg",
-        name:"Random"
+        name:"Random",
+        postion:"Position",
+        instagram:"URL",
+        facebook:"URL",
+        linkedin:"URL"
     },
     {
         index:7,
         src:"../assets/images/user.jpeg",
-        name:"Random"
+        name:"Random",
+        postion:"Position",
+        instagram:"URL",
+        facebook:"URL",
+        linkedin:"URL"
     },
     {
         index:8,
         src:"../assets/images/user.jpeg",
-        name:"Random"
+        name:"Random",
+        postion:"Position",
+        instagram:"URL",
+        facebook:"URL",
+        linkedin:"URL"
     },
     {
         index:9,
         src:"../assets/images/user.jpeg",
-        name:"Random"
+        name:"Random",
+        postion:"Position",
+        instagram:"URL",
+        facebook:"URL",
+        linkedin:"URL"
     },
 
 ]
