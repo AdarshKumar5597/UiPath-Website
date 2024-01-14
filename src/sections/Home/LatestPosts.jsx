@@ -9,19 +9,26 @@ const LatestPosts = () => {
   const navigateToBlogs = () => {
     navigate("/blogs");
   };
+  const navigateToInsta = () => {
+    window.open(
+      "https://www.instagram.com/usc.kiit?igsh=Y3IyZzNnb2N0Y2V3",
+      "_blank",
+      "noreferrer"
+    );
+  };
 
   return (
     <div className="md:h-screen h-fit w-screen bg-[#ffffff]">
       <div className="h-full w-9/12 m-auto py-16">
         <div className="h-full w-full p-4">
-          <p className=" font-semibold text-sm mb-2">OUR BLOG</p>
+          {/* <p className=" font-semibold text-sm mb-2">OUR BLOG</p> */}
           <div className="flex h-1/12 mb-14 justify-between items-center">
             <p className="text-4xl font-bold">Latest posts</p>
             <button
               className=" h-12 font-medium w-32 text-sm rounded-md bg-orange-600 text-center text-white"
-              onClick={navigateToBlogs}
+              onClick={navigateToInsta}
             >
-              Go to blog
+              Go to Instagram
             </button>
           </div>
           <div className="flex gap-8 flex-col md:flex-row">
