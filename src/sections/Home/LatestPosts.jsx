@@ -2,6 +2,8 @@ import { CiCalendar } from "react-icons/ci";
 import { CiClock2 } from "react-icons/ci";
 import { FaArrowRightLong } from "react-icons/fa6";
 import { useNavigate } from "react-router-dom";
+import YouthDay from "./../../assets/images/latestPosts/Brown Black Textured Daily Motivation Facebook Post.svg";
+import challengeExtend from "./../../assets/images/latestPosts/Blue Professional Cyber Monday A4 Document.svg";
 const LatestPosts = () => {
   const navigate = useNavigate();
   const navigateToBlogs = () => {
@@ -26,33 +28,32 @@ const LatestPosts = () => {
             <div className="flex h-10/12 w-full justify-between">
               <div className="h-full w-full flex flex-col gap-2">
                 <img
-                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKyuMkIdyF9eEgud9JWMWsEN5dYgghXC9X1253qj3FXlVFjB9cnQD2Bosu2rFjWeEYVXc&usqp=CAU"
+                  src={YouthDay}
                   className=" rounded-md h-56 w-72 md:w-full"
                 />
                 <div className="flex items-center h-6 justify-start gap-1 w-full">
                   <p className="text-xs font-medium text-[#4e515c]">
-                    Automation |
+                    Community |
                   </p>
                   <CiCalendar size={15} style={{ display: "inline" }} />
                   <p className="text-xs font-medium text-[#4e515c]">
-                    April 1, 2020 |{" "}
+                    January 12, 2024
                   </p>
-                  <CiClock2 size={15} style={{ display: "inline" }} />
-                  <p className="text-xs font-medium text-[#4e515c]">36 min</p>
+                  {/* <CiClock2 size={15} style={{ display: "inline" }} /> */}
+                  <p className="text-xs font-medium text-[#4e515c]"></p>
                 </div>
                 <p className=" text-base font-bold text-[#4e515c]">
-                  What is traffic arbitrage and does it really make money?
+                  National Youth Day
                 </p>
                 <div className="w-full h-30 mb-2">
                   <p className="line-clamp-2 text-[#4e515c] text-sm">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    Aliquam omnis nobis ab tempore obcaecati sunt labore,
-                    aliquid quod explicabo animi aspernatur dolores ut
-                    voluptates commodi iure ducimus asperiores eum voluptate!
+                    STAND UP,BE BOLD,BE STRONG. TAKE THE WHOLE RESPONSIBILITY ON
+                    YOUR OWN SHOULDERS, AND KNOW THAT YOU ARE THE CREATOR OF YOU
+                    DESTINY.
                   </p>
                 </div>
                 <div className="flex items-center justify-start">
-                  <p className="mr-2 font-semibold text-sm">Listen</p>
+                  <p className="mr-2 font-semibold text-sm">Read</p>
                   <FaArrowRightLong style={{ color: "#ff3f3a" }} />
                 </div>
               </div>
@@ -60,53 +61,50 @@ const LatestPosts = () => {
             <div className="flex h-10/12 w-full justify-between">
               <div className="h-full w-full flex flex-col gap-2">
                 <img
-                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKyuMkIdyF9eEgud9JWMWsEN5dYgghXC9X1253qj3FXlVFjB9cnQD2Bosu2rFjWeEYVXc&usqp=CAU"
+                  src={challengeExtend}
                   className=" rounded-md h-56 w-72 md:w-full"
                 />
                 <div className="flex items-center h-6 justify-start gap-1 w-full">
                   <p className="text-xs font-medium text-[#4e515c]">
-                    Automation |
+                    Community |
                   </p>
                   <CiCalendar size={15} style={{ display: "inline" }} />
                   <p className="text-xs font-medium text-[#4e515c]">
-                    April 1, 2020 |{" "}
+                    January 9, 2024
                   </p>
-                  <CiClock2 size={15} style={{ display: "inline" }} />
-                  <p className="text-xs font-medium text-[#4e515c]">36 min</p>
+                  {/* <CiClock2 size={15} style={{ display: "inline" }} /> */}
+                  <p className="text-xs font-medium text-[#4e515c]"></p>
                 </div>
                 <p className=" text-base font-bold text-[#4e515c]">
-                  What is traffic arbitrage and does it really make money?
+                  UiPath Automation Explorer Challenge
                 </p>
                 <div className="w-full h-30 mb-2">
                   <p className="line-clamp-2 text-[#4e515c] text-sm">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    Aliquam omnis nobis ab tempore obcaecati sunt labore,
-                    aliquid quod explicabo animi aspernatur dolores ut
-                    voluptates commodi iure ducimus asperiores eum voluptate!
+                    Great News, UiPath enthusiasts! Due to overwhelming demand
+                    and your unwavweing passion for automation excellence, we're
+                    thrilled to annoince that we're extending the deadline for
+                    the UiPath Challenge!
                   </p>
                 </div>
                 <div className="flex items-center justify-start">
-                  <p className="mr-2 font-semibold text-sm">Listen</p>
+                  <p className="mr-2 font-semibold text-sm">Read</p>
                   <FaArrowRightLong style={{ color: "#ff3f3a" }} />
                 </div>
               </div>
             </div>
             <div className="flex h-10/12 w-full justify-between">
               <div className="h-full w-full flex flex-col gap-2">
-                <img
-                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKyuMkIdyF9eEgud9JWMWsEN5dYgghXC9X1253qj3FXlVFjB9cnQD2Bosu2rFjWeEYVXc&usqp=CAU"
-                  className=" rounded-md h-56 w-72 md:w-full"
-                />
+                <img src="https://martechseries.com/wp-content/uploads/2019/07/UiPath-Named-a-Leader-in-the-2019-Gartner-Magic-Quadrant-for-Robotic-Process-Automation.jpg" />
                 <div className="flex items-center h-6 justify-start gap-1 w-full">
                   <p className="text-xs font-medium text-[#4e515c]">
                     Automation |
                   </p>
                   <CiCalendar size={15} style={{ display: "inline" }} />
                   <p className="text-xs font-medium text-[#4e515c]">
-                    April 1, 2020 |{" "}
+                    April 1, 2020
                   </p>
-                  <CiClock2 size={15} style={{ display: "inline" }} />
-                  <p className="text-xs font-medium text-[#4e515c]">36 min</p>
+                  {/* <CiClock2 size={15} style={{ display: "inline" }} /> */}
+                  <p className="text-xs font-medium text-[#4e515c]"></p>
                 </div>
                 <p className=" text-base font-bold text-[#4e515c]">
                   What is traffic arbitrage and does it really make money?
@@ -120,7 +118,7 @@ const LatestPosts = () => {
                   </p>
                 </div>
                 <div className="flex items-center justify-start">
-                  <p className="mr-2 font-semibold text-sm">Listen</p>
+                  <p className="mr-2 font-semibold text-sm">Read</p>
                   <FaArrowRightLong style={{ color: "#ff3f3a" }} />
                 </div>
               </div>
