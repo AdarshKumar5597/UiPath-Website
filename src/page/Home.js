@@ -12,9 +12,9 @@ const Home = () => {
       <Intro />
       <Motto />
       <Leads />
-      <FacultyReview />
       <LatestPosts />
-        <UpcomingEvents/>
+      <UpcomingEvents/>
+      <FacultyReview/>
     </div>
   );
 };
