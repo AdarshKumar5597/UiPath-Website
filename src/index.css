@@ -236,7 +236,44 @@ code {
   }
 }
 
-.slider {
-  max-width: 1080px;
-  border-radius: 2rem;
+.slider .slide {
+  transform: translateX(calc((100vw - 1080px)/2));
+}
+
+.nextButton {
+  border-radius: 50%;
+  margin-right: 50px;
+  transition: all linear 0.2s;
+}
+
+.nextButton > svg {
+  width: 30px;
+  height: 30px;
+}
+
+.nextButton:hover {
+  background-color: red;
+}
+
+.nextButton:hover > svg > polygon{
+  fill: white;
+}
+
+.previousButton {
+  border-radius: 50%;
+  margin-left: 50px;
+  transition: all linear 0.2s;
+}
+
+.previousButton > svg {
+  width: 30px;
+  height: 30px;
+}
+
+.previousButton:hover {
+  background-color: red;
+}
+
+.previousButton:hover > svg > polygon{
+  fill: white;
 }

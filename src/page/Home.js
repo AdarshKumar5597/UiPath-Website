@@ -7,10 +7,10 @@ import FacultyReview from '../sections/Home/FacultyReview'
 const Home = () => {
   return (
     <div>
-        <Intro/>
-        <Motto/>
-        <Leads/>
-        <FacultyReview/>
+      <Intro />
+      <Leads />
+      <Motto />
+      <FacultyReview />
     </div>
   )
 }
