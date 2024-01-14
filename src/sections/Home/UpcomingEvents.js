@@ -5,7 +5,7 @@ import EventsListItems from '../../components/upcomingEvents/EventsListItems'
 
 const UpcomingEvents = () => {
     return (
-        <div className='bg-white w-full h-[700px] border-2 overflow-hidden'>
+        <div className='bg-white w-full h-[700px] overflow-hidden'>
             <div className=' h-[354.71px] backgroundEvents flex flex-col items-center  relative'>
                 <img 
                 src={circle} 
