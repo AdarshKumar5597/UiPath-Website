@@ -278,3 +278,18 @@ code {
 .previousButton:hover > svg > polygon{
   fill: white;
 }
+
+.eventListItemShadow{
+    /* --tw-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25); */
+    --tw-shadow-color: #fca5a5;
+    --tw-shadow: var(--tw-shadow-colored);
+    --tw-shadow-colored: 0 25px 50px -12px var(--tw-shadow-color);
+    box-shadow: var(--tw-ring-offset-shadow, 100 100 #0000), var(--tw-ring-shadow, 100 100 #0000), var(--tw-shadow);
+  
+}
+
+
+.backgroundEvents{
+  background-size: 150rem ;
+  background-image: url('./assets/images/upcomingEvents/backgroundImage.svg');
+}
