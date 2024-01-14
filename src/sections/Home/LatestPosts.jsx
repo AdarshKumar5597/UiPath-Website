@@ -52,10 +52,15 @@ const LatestPosts = () => {
                     DESTINY.
                   </p>
                 </div>
-                <div className="flex items-center justify-start">
-                  <p className="mr-2 font-semibold text-sm">Read</p>
-                  <FaArrowRightLong style={{ color: "#ff3f3a" }} />
-                </div>
+                <a
+                  href="https://www.instagram.com/p/C1_u4U8PyE5/?igsh=MmIzbDF3ajV5cjg="
+                  target="_blank"
+                >
+                  <div className="flex items-center justify-start">
+                    <p className="mr-2 font-semibold text-sm">Read</p>
+                    <FaArrowRightLong style={{ color: "#ff3f3a" }} />
+                  </div>
+                </a>
               </div>
             </div>
             <div className="flex h-10/12 w-full justify-between">
@@ -86,10 +91,15 @@ const LatestPosts = () => {
                     the UiPath Challenge!
                   </p>
                 </div>
-                <div className="flex items-center justify-start">
-                  <p className="mr-2 font-semibold text-sm">Read</p>
-                  <FaArrowRightLong style={{ color: "#ff3f3a" }} />
-                </div>
+                <a
+                  href="https://www.instagram.com/p/C14kALBBJdk/?igsh=MWhxejlra2oya3dtNQ=="
+                  target="_blank"
+                >
+                  <div className="flex items-center justify-start">
+                    <p className="mr-2 font-semibold text-sm">Read</p>
+                    <FaArrowRightLong style={{ color: "#ff3f3a" }} />
+                  </div>
+                </a>
               </div>
             </div>
             <div className="flex h-10/12 w-full justify-between">
