@@ -4,6 +4,7 @@ import { FaArrowRightLong } from "react-icons/fa6";
 import { useNavigate } from "react-router-dom";
 import YouthDay from "./../../assets/images/latestPosts/Brown Black Textured Daily Motivation Facebook Post.svg";
 import challengeExtend from "./../../assets/images/latestPosts/Blue Professional Cyber Monday A4 Document.svg";
+import recuitment from "./../../assets/images/latestPosts/WhatsApp Image 2024-01-15 at 00.32.31_e6178c13.jpg";
 const LatestPosts = () => {
   const navigate = useNavigate();
   const navigateToBlogs = () => {
@@ -111,33 +112,44 @@ const LatestPosts = () => {
             </div>
             <div className="flex h-10/12 w-full justify-between">
               <div className="h-full w-full flex flex-col gap-2">
-                <img src="https://martechseries.com/wp-content/uploads/2019/07/UiPath-Named-a-Leader-in-the-2019-Gartner-Magic-Quadrant-for-Robotic-Process-Automation.jpg" />
+                <img
+                  src={recuitment}
+                  className=" rounded-md h-56 w-72 md:w-full"
+                />
                 <div className="flex items-center h-6 justify-start gap-1 w-full">
                   <p className="text-xs font-medium text-[#4e515c]">
-                    Automation |
+                    Community |
                   </p>
                   <CiCalendar size={15} style={{ display: "inline" }} />
                   <p className="text-xs font-medium text-[#4e515c]">
-                    April 1, 2020
+                    December 13, 2023
                   </p>
                   {/* <CiClock2 size={15} style={{ display: "inline" }} /> */}
                   <p className="text-xs font-medium text-[#4e515c]"></p>
                 </div>
                 <p className=" text-base font-bold text-[#4e515c]">
-                  What is traffic arbitrage and does it really make money?
+                  UiPath 2023 Recuitment
                 </p>
                 <div className="w-full h-30 mb-2">
                   <p className="line-clamp-2 text-[#4e515c] text-sm">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    Aliquam omnis nobis ab tempore obcaecati sunt labore,
-                    aliquid quod explicabo animi aspernatur dolores ut
-                    voluptates commodi iure ducimus asperiores eum voluptate!
+                    usc.kiit Ready to embark on your RPA journey? Registration
+                    for UiPath Student Developer Community KIIT is LIVE now!
+                    domain, shape your skills! Choose your Scan the QR code on
+                    the poster or click the link in our bio to register. Hurry,
+                    registrations close on December 15th! Open to all B.Tech,
+                    BCA, and MCA students at KIIT. Let's code the future
+                    together!
                   </p>
                 </div>
-                <div className="flex items-center justify-start">
-                  <p className="mr-2 font-semibold text-sm">Read</p>
-                  <FaArrowRightLong style={{ color: "#ff3f3a" }} />
-                </div>
+                <a
+                  href="https://www.instagram.com/p/C0yABXLhmOe/?igsh=enV2ZXFuenNrM3E="
+                  target="_blank"
+                >
+                  <div className="flex items-center justify-start">
+                    <p className="mr-2 font-semibold text-sm">Read</p>
+                    <FaArrowRightLong style={{ color: "#ff3f3a" }} />
+                  </div>
+                </a>
               </div>
             </div>
           </div>
