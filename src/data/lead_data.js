@@ -10,7 +10,7 @@ const LeadData = [
     },
     {
         index:1,
-        src:require("../assets/images/user.jpg"),
+        src:require("../assets/images/leads/chaman.jpg"),
         name:"Chaman Kumar",
         postion:"Graphic",
         instagram:"https://www.instagram.com/87nehal/",
