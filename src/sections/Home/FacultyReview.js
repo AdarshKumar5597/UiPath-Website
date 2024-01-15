@@ -21,17 +21,17 @@ const FacultyReview = () => {
                 {FacultyData.map((faculty, index) => (
                     <div
                         key={index}
-                        className='flex flex-col items-center justify-center px-32 bg-[#F4F5F6]'
+                        className='flex flex-col items-center justify-center px-32 bg-[#F4F5F6] py-5'
                         style={{ background: "no-repeat center center", backgroundColor: "#fff", width: "1080px" }}
                     >
                         <div
                             className="bg-white w-[full] h-[full] flex flex-col justify-evenly p-5 gap-y-3"
                         >
-                            <p className=' text-2xl'>
+                            <p className=' text-xl'>
                                 {faculty.review}
                             </p>
                             <div>
-                                <FacultyReviewCard name={faculty.name} />
+                                <FacultyReviewCard name={faculty.name} src={faculty.src} />
                             </div>
                         </div>
                     </div>
