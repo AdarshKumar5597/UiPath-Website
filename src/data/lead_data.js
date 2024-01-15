@@ -104,7 +104,7 @@ const LeadData = [
         name:"Komal Jaiswal",
         postion:"Social Media Marketing",
         instagram:"https://www.instagram.com/komaljaiswal237?igsh=MTlpNjdwMHk2bHpheg==",
-        gamil:"URL",
+        gamil:" ",
         linkedin:"https://www.linkedin.com/in/komal-jaiswal-9347522a6/"
     },
     {
