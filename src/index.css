@@ -4,6 +4,34 @@
 @tailwind components;
 @tailwind utilities;
 
+.bgc{
+  background-color: #fedad3;
+}
+
+.grad{
+  background-size: 180% 180%;
+  animation: gradient-animation 10s ease infinite;
+  -webkit-text-stroke: 2px #111;
+}
+.bottom-textS1{
+  -webkit-text-stroke: 1px #111;
+  background-color:#ff9a35;
+}
+
+
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
