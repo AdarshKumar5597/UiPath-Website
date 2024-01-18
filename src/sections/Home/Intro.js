@@ -10,12 +10,12 @@ function Intro(){
         <div className="bgc w-full h-screen">
             <Navbar />
             <div className="flex w-full h-5/6 justify-end items-center">
-                <div class="flex w-4/12 h-full justify-around items-center">
-                    <span className="font-bold text-black w-1/2 h-full flex flex-col justify-center items-center"><span className="text-9xl py-0 bg-gradient-to-br from-orange-700  via-orange-300 to-orange-700 grad bg-clip-text text-transparent">UiPath</span><span className="text-2xl py-0 text-center w-[400px]">Student Community KIIT</span><span></span></span>
+                <div class="flex w-3/12 h-full justify-around items-center">
+                    <span className="font-bold text-black w-full h-full flex flex-col justify-center items-center"><span className="text-9xl py-0 bg-gradient-to-br from-orange-700  via-orange-300 to-orange-700 grad bg-clip-text text-transparent">UiPath</span><span className="text-2xl py-0 text-center w-[400px]">Student Community KIIT</span><span></span></span>
                     {/* <span className="text-7xl neumorphic-text" ref={el}></span> */}
                 </div>
                 <div className="flex w-8/12 h-full  justify-around items-center">
-                    <img src={Auto} alt="" className="h-96 rounded-3xl" />
+                    <img src={Auto} alt="" className="h-80 rounded-3xl" />
                 </div>
             </div>
 
