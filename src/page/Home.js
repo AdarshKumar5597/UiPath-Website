@@ -5,6 +5,7 @@ import WhyUi from '../sections/Home/WhyUi'
 import FacultyReview from '../sections/Home/FacultyReview'
 import LatestPosts from '../sections/Home/LatestPosts'
 import UpcomingEvents from '../sections/Home/UpcomingEvents'
+import Lead from '../sections/Home/Lead.js'
 
 const Home = () => {
   return (
@@ -12,6 +13,7 @@ const Home = () => {
       <Intro />
       <WhyUi />
       <WeBelieve />
+      <Lead />
       <UpcomingEvents />
       <FacultyReview />
       <LatestPosts />
