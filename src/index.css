@@ -265,9 +265,12 @@ code {
   }
 }
 
-.slider .slide {
-  transform: translateX(calc((100vw - 1080px)/2));
+@media screen and (min-width: 1024px) {
+  .slider .slide {
+    transform: translateX(calc((100vw - 1080px)/2));
+  }
 }
+
 
 .nextButton {
   border-radius: 50%;
@@ -320,4 +323,47 @@ code {
 .backgroundEvents{
   background-size: 150rem ;
   background-image: url('./assets/images/upcomingEvents/backgroundImage.svg');
+}
+
+
+@media (max-width: 480px),(max-width: 640px), (max-width: 768px), (max-width: 1024px){
+  .reviewText {
+    font-size: 0.65rem;
+  }
+  .facultyText {
+    font-size: 0.6rem;
+  }
+  .facultyImage {
+    height: 60px;
+    width: 60px;
+  }
+  .frc {
+    flex-direction: column;
+  }
+
+  .reviewBox {
+    width: 90vw;
+    padding: 20px;
+  }
+
+  .nextButton {
+    border-radius: 50%;
+    margin-right: 15vh;
+    margin-top: 150px;
+    transition: all linear 0.2s;
+  }
+  .nextButton > svg {
+    width: 10px;
+    height: 10px;
+  }
+  .previousButton {
+    border-radius: 50%;
+    margin-left: 15vh;
+    margin-top: 150px;
+    transition: all linear 0.2s;
+  }
+  .previousButton > svg {
+    width: 10px;
+    height: 10px;
+  }
 }
