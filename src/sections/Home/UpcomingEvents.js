@@ -5,35 +5,41 @@ import { upcomingEvents } from '../../data'
 
 const UpcomingEvents = () => {
     return (
-        <div className='bg-white w-full h-[400px] overflow-hidden'>
-            <div className=' h-[404.71px] backgroundEvents flex flex-col items-center  relative'>
+        <div className=' w-full lg:h-[400px] h-auto overflow-hidden'>
+            <div className='h-full backgroundEvents flex flex-col items-center  relative'>
                 <img
                     src={circle}
                     className='absolute -top-16 -right-44'
-                    alt='' />
+                    alt=''
+                />
 
-                {/* <div className='eventsHeader'>hiiihih</div> */}
-                <div className='text-black text-center mt-[80px]  '>
-                    <p className='text-sm'>OUR EVENTS</p>
-                    <p className='text-3xl font-bold'>Upcoming events</p>
+                <div className="flex flex-col w-11/12 ">
+                    
+                    <div className='text-black text-center lg:mt-[80px] mt-[40px] '>
+                        <p className='text-sm'>OUR EVENTS</p>
+                        <p className='text-3xl font-bold'>Upcoming events</p>
+                    </div>
+
+                    <div className='lg:mt-[59px] flex flex-col space-y-6 m-2 '>
+
+                        {
+                            upcomingEvents?.map((item, index) =>
+                                <React.Fragment key={index}>
+                                    <EventsListItems index={index} data={item} />
+                                </React.Fragment>
+                            )
+                        }
+
+                    </div>
                 </div>
 
-                <div className='mt-[59px] flex flex-col space-y-6  '>
-
-                    {
-                        upcomingEvents?.map((item, index) =>
-                            <React.Fragment key={index}>
-                                <EventsListItems index={index} data={item} />
-                            </React.Fragment>
-                        )
-                    }
-
-                </div>
 
                 <img
                     src={dots}
                     className='absolute -bottom-9 left-0'
-                    alt='' />
+                    alt=''
+                />
+
             </div>
 
         </div>
