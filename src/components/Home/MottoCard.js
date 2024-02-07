@@ -5,8 +5,8 @@ const MottoCard = ({ heading, desc, onHover }) => {
     <div
       className={`${
         onHover
-          ? 'card max-w-[675px] max-h-[875px] p-1  bg-custom-orange text-left'
-          : 'w-[275px] h-[375px] p-2 rounded-md flex flex-col items-center justify-evenly bg-white'
+          ? 'card max-w-[675px] max-h-[875px]  p-2  bg-custom-orange text-left'
+          : 'md: w-[275px] md: h-[375px] p-2 rounded-md flex flex-col items-center justify-evenly bg-white'
       }`}
     >
       <div className={`${onHover ? 'text-left' : ''}`}>
