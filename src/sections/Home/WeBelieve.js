@@ -6,10 +6,10 @@ const WeBelieve = () => {
   const [hoveredIndex, setHoveredIndex] = useState(null)
 
   return (
-    <div className='bg-custom-backg w-[100vw] h-[90vh] flex flex-col justify-center items-center gap-y-5'>
-      <div className='flex max-w-[1080px] w-[1080px] items-center px-5'>
+    <div className='bg-custom-backg w-[100vw] p-5 flex flex-col justify-center items-center gap-y-5'>
+      <div className='flex max-w-[1080px] lg:w-[1080px] items-center px-5 md:justify-center sm:justify-center mottoTitle'>
         <p
-          className='font-oswald text-5xl text-orange-600 w-[400px] ml-12'
+          className='font-oswald text-5xl text-orange-600 lg:w-[400px] ml-12 paraContainer'
           style={{
             backgroundImage: 'linear-gradient(45deg, red, orange, yellow)',
             WebkitBackgroundClip: 'text',
@@ -18,14 +18,14 @@ const WeBelieve = () => {
         >
           We believe in
         </p>
-        <div className='flex relative items-center w-full'></div>
+        <div className=' items-center w-full lg:grid-cols-3 md:grid-cols-1'></div>
       </div>
-      <div className='max-w-[1080px] flex justify-evenly items-center'>
-        <div className='w-[1080px] h-[500px] bg-custom-backg rounded-3xl flex flex-row items-center justify-evenly pb-16'>
+      <div className='max-w-[1080px] md: pb-4'>
+        <div className='md:w-[1080px] bg-custom-backg rounded-3xl flex md:flex-col sm:flex-col lg:flex-row items-center justify-evenly pb-16 md:pb-2 md:mb-3 md:gap-y-3 sm:gap-y-3 mottoCardContainer'>
           {MottoData.map((motto, index) => (
             <div
               key={index}
-              className='transition-transform transform hover:scale-105'
+              className='lg:transition-transform lg:transform lg:hover:scale-105'
               onMouseEnter={() => setHoveredIndex(index)}
               onMouseLeave={() => setHoveredIndex(null)}
             >
