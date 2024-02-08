@@ -25,7 +25,7 @@ const WeBelieve = () => {
           {MottoData.map((motto, index) => (
             <div
               key={index}
-              className='transition-transform transform hover:scale-105'
+              className='lg:transition-transform lg:transform lg:hover:scale-105'
               onMouseEnter={() => setHoveredIndex(index)}
               onMouseLeave={() => setHoveredIndex(null)}
             >
