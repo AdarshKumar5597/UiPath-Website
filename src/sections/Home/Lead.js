@@ -1,16 +1,14 @@
 import React from "react";
 import LeadData from "../../data/lead_data";
-// import UserPic from "../../assets/images/user.jpeg";
-// import deep from "../../assets/images/leads/deep.jpg"
 import { ReactComponent as Gmail } from "../../assets/icon/mail-fill.svg";
 import { ReactComponent as Instagram } from "../../assets/icon/instagram-fill.svg";
 import { ReactComponent as Linkedin } from "../../assets/icon/linkedin-fill.svg";
 const Leads = () => {
     return (
-        <div className="w-[100vw] h-[110vh] flex flex-col pl-[210px] gap-y-5 pt-10 bg-white" style={{ 'font-family': 'Lato, sans-serif' }}>
-            <div className="flex flex-col w-[573px] h-[229px]">
+        <div className="w-[100vw] h-[110vh] flex flex-col md:pl-[210px] pl-10  gap-y-5 pt-10 bg-white" style={{ 'font-family': 'Lato, sans-serif' }}>
+            <div className="flex flex-col w-[full] h-[full] mb-3 md:w-[573px] md:h-[229px] md:mb-0">
                 <p className="font-[Lato] text-lg font-bold text-gray-900">WE ARE</p>
-                <p className="font-[Lato] text-5xl mt-3 font-black text-gray-900">
+                <p className="font-[Lato] text-4xl md:text-5xl mt-3 font-black text-gray-900">
                     Enthusiastic individuals working for extraordinary team.
                 </p>
             </div>
@@ -25,7 +23,7 @@ const Leads = () => {
 
                             <div class="flex-row items-center justify-end gap-2 opacity-0 group-hover:opacity-100 transition-all duration-500">
 
-                                <div class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black/50"></div>
+                                <div class="absolute inset-0 bg-gradient-to-b from-transparent via-tranzsparent to-black/50"></div>
 
                                 <div className="flex flex-row items-center justify-end gap-2 translate-y-[100%] group-hover:translate-y-0 transition-all duration-500 relative bottom-14 right-4">
                                     <a href={lead.facebook} target="blank">
