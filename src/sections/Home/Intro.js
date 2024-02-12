@@ -7,7 +7,7 @@ import Orangedot from "../../assets/images/Orangecirc.png";
 function Intro(){
 
     return(
-        <div className="bgc w-full h-screen">
+        <div className="bgc w-full  h-fit pb-10">
             <Navbar />
             <div className="flex w-full h-fit md:justify-end justify-center items-center">
                 <div class="flex md:w-3/12 w-full h-full md:justify-around justify-center items-center md:mt-24 mt-52">
