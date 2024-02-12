@@ -9,8 +9,8 @@
 }
 
 .grad {
-  background-size: 180% 180%;
-  animation: gradient-animation 10s ease infinite;
+  background-size: 200% 200%;
+  animation: gradient-animation 5s ease infinite;
   -webkit-text-stroke: 2px #111;
 }
 .bottom-textS1 {

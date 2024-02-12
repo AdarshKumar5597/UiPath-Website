@@ -1,7 +1,15 @@
-import React from 'react';
-import {Link, useLocation} from 'react-router-dom';
+import React, { useState } from 'react';
+import {Link,NavLinks, useLocation} from 'react-router-dom';
+import { IoMenu } from "react-icons/io5";
+import { IoIosClose } from "react-icons/io";
+import { Menu } from 'lucide-react';
 import Logo from "../../assets/images/udsc.png";
 function Navbar (){
+    const [isOpen,setIsOpen]=useState(true);
+    const toggleNavbar=()=>{
+        setIsOpen(!isOpen);
+    }
+
     const NavItems = [
         {
             index: 0,
@@ -47,11 +55,11 @@ function Navbar (){
     }
 
     return (
-        <div className='flex fixed top-0 font-semibold text-xl w-full bg-opacity-100 bg-white justify-between px-10 items-center py-1'>
+        <div className='flex fixed top-0 font-semibold text-xl w-full bg-opacity-100 bg-white justify-between px-10 items-center py-1 z-20'>
             <Link to="/">
                 <img src={Logo} alt='logo' className="h-[100px] w-[150px]" />
             </Link>
-            <div className='flex  justify-evenly items-center gap-3 w-[50vw]'>
+            <div className='hidden md:flex justify-evenly items-center gap-3 w-[50vw]'>
                 {NavItems.map((element) => (
                     <div key={element.index} className="p-3 hover:border-b-4 hover:border-b-orange-400 text-black w-32 flex justify-center items-center relative">
                         <Link to={element.path}>
@@ -62,9 +70,25 @@ function Navbar (){
                     </div>
                 ))}
             </div>
+            <div className='md:hidden'>
+                <button onClick={toggleNavbar}>
+                            {isOpen?<IoMenu size={42}/>:
+                            <div className='flex flex-col justify-evenly items-center gap-3 w-[100vw] pt-5 pr-10'>
+                                <button className='w-full flex justify-center' onClick={toggleNavbar}>
+                                    <IoIosClose className='hover:border-b-4 hover:border-b-orange-400 text-orange-600' size={70}/>
+                                </button>
+                                {NavItems.map((element) => (
+                                    <div key={element.index} className="p-3 hover:border-b-4 hover:border-b-orange-400 text-black w-32 flex justify-center items-center relative">
+                                    <Link to={element.path}>
+                                        <p className={matchRoute(element.path) ? "scale-125 transition-all duration-200" : ""}>{element.name}</p>
+                                    </Link>   
+                            </div>
+                ))}
+            </div>}
+                </button>
+            </div>
         </div>
     );
 }
 
 export default Navbar;
-
