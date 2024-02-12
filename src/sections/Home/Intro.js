@@ -11,7 +11,7 @@ function Intro(){
             <Navbar />
             <div className="flex w-full h-fit md:justify-end justify-center items-center">
                 <div class="flex md:w-3/12 w-full h-full md:justify-around justify-center items-center md:mt-24 mt-52">
-                    <span className="font-bold text-black w-full h-full flex flex-col justify-center items-center"><span className="text-9xl py-0 bg-gradient-to-br from-orange-700  via-orange-300 to-orange-700 grad bg-clip-text text-transparent">UiPath</span><span className="text-2xl py-0 text-center w-[400px]">Student Community KIIT</span><span></span></span>
+                    <span className="font-bold text-black w-full h-full flex flex-col justify-center items-center"><span className="text-8xl md:text-9xl py-0 bg-gradient-to-br from-orange-700  via-orange-300 to-orange-700 grad bg-clip-text text-transparent">UiPath</span><span className="text-2xl py-0 text-center w-[400px]">Student Community KIIT</span><span></span></span>
                     {/* <span className="text-7xl neumorphic-text" ref={el}></span> */}
                 </div>
                 <div className="flex md:w-8/12 w-0 h-full justify-around items-center  mt-24">
