@@ -5,7 +5,7 @@ import { IoIosClose } from "react-icons/io";
 import { Menu } from 'lucide-react';
 import Logo from "../../assets/images/udsc.png";
 function Navbar (){
-    const [isOpen,setIsOpen]=useState(false);
+    const [isOpen,setIsOpen]=useState(true);
     const toggleNavbar=()=>{
         setIsOpen(!isOpen);
     }
