@@ -9,6 +9,7 @@ import { AdminEvents } from "../components/adminDashboard/Events";
 import { AdminDashboard } from "../components/adminDashboard/Dashboard";
 import { AdminPosts } from "../components/adminDashboard/AdminPosts";
 import { PostEdit } from "../components/adminDashboard/PostEdit";
+import { DomainLayout } from "../layout/domain/DomainLayout";
 export default function Router() {
   return useRoutes([
     {
@@ -16,6 +17,7 @@ export default function Router() {
       element: <MainLayout />,
       children: [{ path: "*", element: <MainLayout /> }],
     },
+    { path: "/domains", element: <DomainLayout /> },
     {
       path: "/signin",
       element: <SignInPage />,
