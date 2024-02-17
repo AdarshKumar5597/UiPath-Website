@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { IoMdAdd } from "react-icons/io";
 
 import recuitment from "./../../assets/images/latestPosts/WhatsApp Image 2024-01-15 at 00.32.31_e6178c13.jpg";
+import { useNavigate } from "react-router-dom";
 export const AdminPosts = () => {
   const [allPosts, setAllPosts] = useState([]);
 
@@ -20,12 +21,22 @@ export const AdminPosts = () => {
       });
   }, []);
 
+  const navigate = useNavigate();
+
+  const NavigateToEdit = (id) => {
+    navigate(`/admin/posts/${id}`);
+  };
+
+  const handleAddPosts = () => {
+    navigate("/admin/posts/add");
+  };
+
   return (
     <div className="h-full w-full flex gap-2 p-2 overflow-x-hidden flex-col">
       <div className="w-full h-fit flex p-4">
         <h1 className="w-full p-4">Posts</h1>
         <button>
-          <IoMdAdd size={25} />
+          <IoMdAdd size={25} onClick={() => handleAddPosts()} />
         </button>
       </div>
       <div className="h-full flex gap-4 flex-wrap w-full">
@@ -39,7 +50,12 @@ export const AdminPosts = () => {
                 <p className=" line-clamp-2">{post.description}</p>
               </div>
               <div className="w-full h-1/3 flex gap-2">
-                <button className="w-full p-2 rounded-xl border">Edit</button>
+                <button
+                  className="w-full p-2 rounded-xl border"
+                  onClick={() => NavigateToEdit(post._id)}
+                >
+                  Edit
+                </button>
                 <button className="w-full p-2 rounded-xl border">Delete</button>
               </div>
             </div>
