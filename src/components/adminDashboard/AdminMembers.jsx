@@ -6,12 +6,15 @@ export const AdminMembers = () => {
   const handleEdit = (id) => {
     navigate(`/admin/members/${id}`);
   };
+  const handleAddMember = () => {
+    navigate("/admin/members/add");
+  };
   return (
     <div className="h-full w-full overflow-scroll flex gap-2 p-2 overflow-x-hidden flex-wrap">
       <div className="w-full flex p-4">
         <h1 className="w-full p-4">Members</h1>
         <button>
-          <IoMdAdd size={25} />
+          <IoMdAdd size={25} onClick={() => handleAddMember()} />
         </button>
       </div>
       {LeadData.map((lead) => {
