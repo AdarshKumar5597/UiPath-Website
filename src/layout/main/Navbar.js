@@ -53,7 +53,7 @@ function Navbar() {
   };
 
   return (
-    <div className="flex fixed top-0 font-semibold text-xl w-full bg-opacity-100 bg-white justify-between px-10 items-center py-1 z-50">
+    <div className="flex fixed top-0 font-semibold text-xl w-full bg-opacity-100 bg-[#fedad3] justify-between px-10 items-center py-1 z-50">
       <Link to="/">
         <img src={Logo} alt="logo" className="h-[100px] w-[150px]" />
       </Link>
