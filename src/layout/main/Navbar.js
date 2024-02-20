@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { Link, NavLinks, useLocation } from "react-router-dom";
 import { IoMenu } from "react-icons/io5";
 import { IoIosClose } from "react-icons/io";
-import { Menu } from "lucide-react";
 import Logo from "../../assets/images/udsc.png";
 function Navbar() {
   const [isOpen, setIsOpen] = useState(true);

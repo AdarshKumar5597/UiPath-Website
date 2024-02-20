@@ -10,6 +10,7 @@ import { AdminDashboard } from "../components/adminDashboard/Dashboard";
 import { AdminPosts } from "../components/adminDashboard/AdminPosts";
 import { PostEdit } from "../components/adminDashboard/PostEdit";
 import { DomainLayout } from "../layout/domain/DomainLayout";
+import { ProjectEdit } from "../components/adminDashboard/ProjectEdit";
 export default function Router() {
   return useRoutes([
     {
@@ -34,6 +35,7 @@ export default function Router() {
         { path: "events", element: <AdminEvents /> },
         { path: "posts", element: <AdminPosts /> },
         { path: "posts/:id", element: <PostEdit /> },
+        { path: "projects/add", element: <ProjectEdit /> },
       ],
     },
   ]);
