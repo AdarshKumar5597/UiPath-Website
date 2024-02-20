@@ -61,13 +61,17 @@ function Navbar() {
         {NavItems.map((element) => (
           <div
             key={element.index}
-            className="p-3 hover:border-b-4 hover:border-b-orange-400 text-black w-32 flex justify-center items-center relative"
+            className={
+              matchRoute(element.path)
+                ? "p-3 text-black w-32 flex justify-center items-center relative"
+                : "p-3 hover:border-b-4 hover:border-b-orange-400 text-black w-32 flex justify-center items-center relative"
+            }
           >
             <Link to={element.path}>
               <p
                 className={
                   matchRoute(element.path)
-                    ? "scale-125 transition-all duration-200"
+                    ? "scale-125 transition-all p-3 duration-200 border-b-orange-400 border-b-4"
                     : ""
                 }
               >

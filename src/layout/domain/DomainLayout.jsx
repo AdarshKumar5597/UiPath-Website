@@ -7,14 +7,17 @@ export const DomainLayout = () => {
   return (
     <div className="min-h-[90vh] overflow-x-clip bg-[#fedad3]">
       <Navbar />
-      <div className="h-full mt-[108px] flex flex-wrap">
+      <div className="h-[50vh] w-full bg-[#fedad3] flex justify-center items-center">
+        <h1 className=" mt-36 font-semibold text-5xl">OUR DOMAINS</h1>
+      </div>
+      <div className="h-full py-24 flex bg-[#fedad3] flex-wrap">
         {domainData.map((domain) => {
           return (
             <div className="h-1/2 flex flex-col">
-              <h1 className="h-fit bg-white border-2 p-4 w-full text-black rounded-xl m-4">
+              <h1 className="h-fit bg-white border border-slate-400 p-4 w-full text-black rounded-xl ml-12">
                 {domain.name}
               </h1>
-              <div className="w-full p-4 h-full flex flex-col md:flex-row items-center gap-8 ">
+              <div className="w-full p-12 h-full flex flex-col md:flex-row items-center gap-8 ">
                 <div className="h-full w-1/2">
                   <p className="text-center">{domain.description}</p>
                 </div>
