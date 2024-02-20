@@ -1,3 +1,4 @@
+import Footer from "../components/common/Footer.jsx";
 import { eventsData } from "../data/events_data";
 import Navbar from "../layout/main/Navbar";
 export const Events = () => {
@@ -10,7 +11,7 @@ export const Events = () => {
           Lectures,workshops & master-classes
         </h1>
       </div>
-      <div className="h-full w-full relative">
+      <div className="h-screen w-full relative">
         <div className="absolute flex items-center justify-center flex-wrap gap-4 -top-14 z-10">
           {eventsData.map((event) => {
             return (
@@ -29,6 +30,7 @@ export const Events = () => {
           })}
         </div>
       </div>
+      <Footer />
     </div>
   );
 };
