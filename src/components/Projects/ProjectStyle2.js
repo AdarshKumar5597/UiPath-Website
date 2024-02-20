@@ -1,0 +1,16 @@
+
+
+import React from 'react';
+
+const ProjectStyle2 = ({ imageSrc, title, description }) => {
+  return (
+    
+    <div className="mx-4 w-[32%] hover:shadow-md hover:text-red-500 p-4">
+      <img className="p-1" src={imageSrc} alt={title} />
+      <h3 className="mt-5 font-bold text-xl">{title}</h3>
+      <p className="mt-2 font-semibold text-gray-700 text-base">{description}</p>
+    </div>
+  );
+};
+
+export default ProjectStyle2;
