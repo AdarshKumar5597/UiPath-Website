@@ -11,6 +11,8 @@ import { AdminPosts } from "../components/adminDashboard/AdminPosts";
 import { PostEdit } from "../components/adminDashboard/PostEdit";
 import { DomainLayout } from "../layout/domain/DomainLayout";
 import { ProjectEdit } from "../components/adminDashboard/ProjectEdit";
+import ProjectPage from "../page/project";
+import { Events } from "../page/Events";
 export default function Router() {
   return useRoutes([
     {
@@ -19,6 +21,8 @@ export default function Router() {
       children: [{ path: "*", element: <MainLayout /> }],
     },
     { path: "/domains", element: <DomainLayout /> },
+    { path: "/events", element: <Events /> },
+    { path: "/gallery", element: <ProjectPage /> },
     {
       path: "/signin",
       element: <SignInPage />,
