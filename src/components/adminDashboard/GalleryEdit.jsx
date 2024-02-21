@@ -1,66 +1,50 @@
 import { CiCamera } from "react-icons/ci";
-import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
+
 import recuitment from "./../../assets/images/latestPosts/WhatsApp Image 2024-01-15 at 00.32.31_e6178c13.jpg";
 import { WidgetLoader, Widget } from "react-cloudinary-upload-widget";
-export const PostEdit = () => {
-  const [post, setPost] = useState({});
+export const GalleryEdit = (post) => {
   const { id } = useParams();
   const successCallBack = (result) => {
     const imgSrc = result.info.secure_url;
+    console.log("here");
     console.log(imgSrc);
   };
-  console.log(id);
-  useEffect(() => {
-    fetch(`${process.env.REACT_APP_BACKEND_BASE_URL}/post/${id}`, {
-      method: "GET",
-      header: {
-        "Content-Type": "application/json",
-      },
-    })
-      .then((res) => {
-        return res.json();
-      })
-      .then((resp) => {
-        console.log(resp);
-        setPost(resp.data);
-      });
-  }, [id]);
-
   return (
     <div className="h-full w-full p-2 flex gap-2  overflow-scroll overflow-x-hidden bg-white flex-col">
       <div className="w-full h-full">
         <div className="w-full p-4 flex h-full rounded-xl">
           <div className="h-full w-1/2">
-            <h1 className=" font-bold mb-2">Post Title</h1>
+            <h1 className=" font-bold mb-2">Title</h1>
             <input
               type="email"
               placeholder={post?.title || "Email"}
               className="border-2 w-full p-2 rounded-xl"
             />
-            <h1 className=" font-bold mb-2">Post Description</h1>
+            {/* <h1 className=" font-bold mb-2">Event Description</h1>
             <textarea
               placeholder={post?.description || "Description"}
               className="border-2 h-[30%] w-full p-2 rounded-xl"
             ></textarea>
-            <h1 className=" font-bold mb-2">Domain</h1>
+            <h1 className=" font-bold mb-2">Venue</h1>
             <input
               type="text"
-              placeholder={post?.domain || "Domain"}
+              placeholder={post?.domain || "Venue"}
               className="border-2 w-full p-2 rounded-xl"
             />
-            <h1 className=" font-bold mb-2">Link</h1>
+            <h1 className=" font-bold mb-2">Registration Link</h1>
             <input
               type="text"
-              placeholder={post?.link || "Post Link"}
+              placeholder={post?.link || "Registration Link"}
               className="border-2 w-full p-2 rounded-xl"
             />
-            <h1 className=" font-bold mb-2">Type</h1>
-            <select value={post?.type || "Read"}>
-              <option>Read</option>
-              <option>Listen</option>
-              <option>Watch</option>
-            </select>
+            <h1 className=" font-bold mb-2">Event Date</h1>
+            <input type="date" className="border-2 w-full p-2 rounded-xl" />
+            <h1 className=" font-bold mb-2">Registration Started</h1>
+            <select value={post?.type || false}>
+              <option value={true}>True</option>
+              <option value={false}>False</option>
+            </select> */}
           </div>
           <div className="h-full w-1/2 p-4">
             <div className="  rounded-xl h-full w-full">
@@ -72,19 +56,24 @@ export const PostEdit = () => {
                 <div
                   className={`w-full flex flex-col gap-2  ${
                     id === "add"
-                      ? "justify-center relative items-center h-14"
+                      ? "justify-center relative items-center h-full"
                       : "h-full"
                   }`}
                 >
                   {id === "add" ? (
                     <>
-                      <CiCamera size={70} style={{ margin: "auto" }} />
+                      <CiCamera
+                        size={70}
+                        style={{ margin: "auto", color: "black" }}
+                      />
                       <WidgetLoader />
                       <Widget
                         cloudName={"dy0raom2p"}
                         uploadPreset={"ui-path"}
                         buttonText={"Upload Photo"}
-                        onSuccess={() => successCallBack()}
+                        onSuccess={successCallBack}
+                        multiple={true}
+                        cropping={false}
                         style={{
                           color: "black",
                           border: "none",
@@ -92,26 +81,26 @@ export const PostEdit = () => {
                           backgroundColor: "white",
                           borderRadius: "4px",
                           position: "absolute",
-                          bottom: "-20px",
+                          bottom: "190px",
                           // height: "100%",
                           // width: "100%",
                         }}
                       />
+
                       {/* <input
-                        type="file"
-                        id="img"
-                        className="h-full w-full hidden"
-                      />
-                      <label
-                        for="img"
-                        className=" h-full w-full text-center underline text-blue-700"
-                      >
-                        <CiCamera
-                          size={70}
-                          style={{ margin: "auto", color: "black" }}
+                          ref={eventImg}
+                          type="file"
+                          id="img"
+                          className="h-full w-full hidden"
+                          onChange={() => handleImageUpload}
                         />
-                        Select Post Image
-                      </label> */}
+                        <label
+                          for="img"
+                          className=" h-full w-full text-center underline text-blue-700"
+                        > */}
+
+                      {/* Select Event Image
+                        </label> */}
                     </>
                   ) : (
                     <>

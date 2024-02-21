@@ -17,6 +17,7 @@ import GalleryOne from "../page/GalleryOne";
 import { EventsEdit } from "../components/adminDashboard/EventsEdit";
 import { AdminGallery } from "../components/adminDashboard/AdminGallery";
 import { GalleryEdit } from "../components/adminDashboard/GalleryEdit";
+import Members from "../components/Members/Members";
 export default function Router() {
   return useRoutes([
     {
@@ -26,6 +27,7 @@ export default function Router() {
     },
     { path: "/domains", element: <DomainLayout /> },
     { path: "/events", element: <Events /> },
+    { path: "/members", element: <Members /> },
     { path: "/gallery", element: <ProjectPage /> },
     { path: "/gallery/:id", element: <GalleryOne /> },
     {
