@@ -3,14 +3,14 @@ import { FaRegUser } from "react-icons/fa";
 import { CiCamera } from "react-icons/ci";
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
-import { WidgetLoader, Widget } from "react-cloudinary-upload-widget";
+//import { WidgetLoader, Widget } from "react-cloudinary-upload-widget";
 export const MemberEdit = () => {
   const [member, setMember] = useState({});
   const { id } = useParams();
-  const successCallBack = (result) => {
-    const imgSrc = result.info.secure_url;
-    console.log(imgSrc);
-  };
+  // const successCallBack = (result) => {
+  //   const imgSrc = result.info.secure_url;
+  //   console.log(imgSrc);
+  // };
   useEffect(() => {
     fetch(`${process.env.REACT_APP_BACKEND_BASE_URL}/members/${id}`, {
       method: "GET",
@@ -98,7 +98,7 @@ export const MemberEdit = () => {
             <div className=" border-dashed border-4 rounded-xl h-full w-full">
               <div className="w-full flex flex-col h-full  justify-center items-center relative">
                 <CiCamera size={70} style={{ margin: "auto" }} />
-                <WidgetLoader />
+{/*                 <WidgetLoader />
                 <Widget
                   cloudName={"dy0raom2p"}
                   uploadPreset={"ui-path"}
@@ -115,7 +115,7 @@ export const MemberEdit = () => {
                     // height: "100%",
                     // width: "100%",
                   }}
-                />
+                /> */}
                 {/* <input type="file" id="img" className="h-full w-full hidden" />
                 <label for="img">
                   <p className=" underline text-blue-700">
