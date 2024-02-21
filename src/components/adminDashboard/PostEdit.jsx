@@ -84,7 +84,7 @@ export const PostEdit = () => {
                         cloudName={"dy0raom2p"}
                         uploadPreset={"ui-path"}
                         buttonText={"Upload Photo"}
-                        onSuccess={() => successCallBack()}
+                        onSuccess={successCallBack}
                         style={{
                           color: "black",
                           border: "none",
@@ -121,7 +121,7 @@ export const PostEdit = () => {
                         cloudName={"dy0raom2p"}
                         uploadPreset={"ui-path"}
                         buttonText={"Upload Photo"}
-                        onSuccess={() => successCallBack()}
+                        onSuccess={successCallBack}
                         style={{
                           color: "black",
                           border: "none",
