@@ -3,8 +3,8 @@ import UserPic from '../../assets/images/why-uipath.jpg'
 
 const WhyUi = () => {
   return (
-    <div className='w-full bg-white py-16 px-4'>
-      <div className='max-w-[1240px] mx-auto grid md: grid-cols-2'>
+    <div className='w-full bg-white py-16 px-4 '>
+      <div className='max-w-[1240px] mx-auto grid lg:grid-cols-2 sm:grid-cols-1'>
         <img className='w-[500px] mx-auto my-5' src={UserPic} alt='/' />
         <div className='flex flex-col justify-center'>
           <p className='font-semibold pl-5'>WHO WE ARE</p>

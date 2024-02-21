@@ -6,7 +6,7 @@ const WeBelieve = () => {
   const [hoveredIndex, setHoveredIndex] = useState(null)
 
   return (
-    <div className='bg-custom-backg w-[100vw] p-5 flex flex-col justify-center items-center gap-y-5'>
+    <div className='bg-custom-backg w-[100vw] p-5 flex flex-col justify-center items-center gap-y-5 '>
       <div className='flex max-w-[1080px] lg:w-[1080px] items-center px-5 md:justify-center sm:justify-center mottoTitle'>
         <p
           className='font-oswald text-5xl text-orange-600 lg:w-[400px] ml-12 paraContainer'
