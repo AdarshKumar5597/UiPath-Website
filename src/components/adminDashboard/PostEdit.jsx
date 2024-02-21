@@ -2,14 +2,14 @@ import { CiCamera } from "react-icons/ci";
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import recuitment from "./../../assets/images/latestPosts/WhatsApp Image 2024-01-15 at 00.32.31_e6178c13.jpg";
-import { WidgetLoader, Widget } from "react-cloudinary-upload-widget";
+//import { WidgetLoader, Widget } from "react-cloudinary-upload-widget";
 export const PostEdit = () => {
   const [post, setPost] = useState({});
   const { id } = useParams();
-  const successCallBack = (result) => {
-    const imgSrc = result.info.secure_url;
-    console.log(imgSrc);
-  };
+  // const successCallBack = (result) => {
+  //   const imgSrc = result.info.secure_url;
+  //   console.log(imgSrc);
+  // };
   console.log(id);
   useEffect(() => {
     fetch(`${process.env.REACT_APP_BACKEND_BASE_URL}/post/${id}`, {
@@ -79,7 +79,7 @@ export const PostEdit = () => {
                   {id === "add" ? (
                     <>
                       <CiCamera size={70} style={{ margin: "auto" }} />
-                      <WidgetLoader />
+{/*                       <WidgetLoader />
                       <Widget
                         cloudName={"dy0raom2p"}
                         uploadPreset={"ui-path"}
@@ -96,7 +96,7 @@ export const PostEdit = () => {
                           // height: "100%",
                           // width: "100%",
                         }}
-                      />
+                      /> */}
                       {/* <input
                         type="file"
                         id="img"
@@ -116,7 +116,7 @@ export const PostEdit = () => {
                   ) : (
                     <>
                       <img src={recuitment} />
-                      <WidgetLoader />
+{/*                       <WidgetLoader />
                       <Widget
                         cloudName={"dy0raom2p"}
                         uploadPreset={"ui-path"}
@@ -133,7 +133,7 @@ export const PostEdit = () => {
                           width: "100%",
                           border: "1px solid black",
                         }}
-                      />
+                      /> */}
                       {/* <label
                         for="imgInput"
                         className="w-full p-2 rounded-xl text-center border"
