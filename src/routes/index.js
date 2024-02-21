@@ -13,6 +13,7 @@ import { DomainLayout } from "../layout/domain/DomainLayout";
 import { ProjectEdit } from "../components/adminDashboard/ProjectEdit";
 import ProjectPage from "../page/project";
 import { Events } from "../page/Events";
+import GalleryOne from "../page/GalleryOne";
 export default function Router() {
   return useRoutes([
     {
@@ -23,6 +24,7 @@ export default function Router() {
     { path: "/domains", element: <DomainLayout /> },
     { path: "/events", element: <Events /> },
     { path: "/gallery", element: <ProjectPage /> },
+    { path: "/gallery/:id", element: <GalleryOne /> },
     {
       path: "/signin",
       element: <SignInPage />,

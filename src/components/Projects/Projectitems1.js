@@ -2,7 +2,7 @@ import React from "react";
 import ProjectStyle1 from "./ProjectStyle1";
 const ProjectItems1 = ({ photos }) => {
   return (
-    <div className="mx-10 flex justify-items-center items-center">
+    <div className="mx-10 flex flex-col md:flex-row justify-items-center items-center">
       <ProjectStyle1
         imageSrc={photos[0]}
         // title="Abstract Modern Graphic 3D Render"

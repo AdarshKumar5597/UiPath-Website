@@ -3,7 +3,7 @@ import ProjectStyle2 from "./ProjectStyle2";
 const ProjectItems2 = ({ photos }) => {
   const last = true;
   return (
-    <div className="mx-10 flex justify-items-center items-center">
+    <div className="mx-10 flex flex-col md:flex-row  justify-items-center items-center">
       <ProjectStyle2
         imageSrc={photos[0]}
         // title="Abstract Shape Design"

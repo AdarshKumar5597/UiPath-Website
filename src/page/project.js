@@ -15,7 +15,7 @@ export default function ProjectPage() {
       <div className="h-full pb-20 w-full">
         {galleryData.map((gallery) => {
           return (
-            <section className="mx-40 pt-10">
+            <section className="md:mx-40 mx-4 pt-10">
               <h1 className=" border w-full font-semibold text-xl shadow-xl rounded-lg p-4 mb-8">
                 ORIENTATION SYNERGY
               </h1>
