@@ -3,13 +3,13 @@ import { FaRegUser } from "react-icons/fa";
 import { CiCamera } from "react-icons/ci";
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
-import { WidgetLoader, Widget } from "react-cloudinary-upload-widget";
+//import { WidgetLoader, Widget } from "react-cloudinary-upload-widget";
 export const ProjectEdit = () => {
   const [project, setProject] = useState({});
-  const successCallBack = (result) => {
-    const imgSrc = result.info.secure_url;
-    console.log(imgSrc);
-  };
+  // const successCallBack = (result) => {
+  //   const imgSrc = result.info.secure_url;
+  //   console.log(imgSrc);
+  // };
 
   return (
     <div className="h-full w-full p-2 flex gap-2  overflow-scroll overflow-x-hidden flex-col">
@@ -44,7 +44,7 @@ export const ProjectEdit = () => {
             <div className=" border-dashed border-4 rounded-xl h-full w-full">
               <div className="w-full flex flex-col h-full relative justify-center items-center">
                 <CiCamera size={70} style={{ margin: "auto" }} />
-                <WidgetLoader />
+{/*                 <WidgetLoader />
                 <Widget
                   cloudName={"dy0raom2p"}
                   uploadPreset={"ui-path"}
@@ -61,7 +61,7 @@ export const ProjectEdit = () => {
                     // height: "100%",
                     // width: "100%",
                   }}
-                />
+                /> */}
                 {/* <input type="file" id="img" className="h-full w-full hidden" />
                 <label for="img">
                   <CiCamera size={70} style={{ margin: "auto" }} />
