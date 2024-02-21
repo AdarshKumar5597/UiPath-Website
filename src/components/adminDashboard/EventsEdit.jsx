@@ -2,16 +2,16 @@ import { CiCamera } from "react-icons/ci";
 import { useParams } from "react-router-dom";
 import recuitment from "./../../assets/images/latestPosts/WhatsApp Image 2024-01-15 at 00.32.31_e6178c13.jpg";
 import { useRef } from "react";
-import { WidgetLoader, Widget } from "react-cloudinary-upload-widget";
+//import { WidgetLoader, Widget } from "react-cloudinary-upload-widget";
 
 export const EventsEdit = (post) => {
   const handleImageUpload = (image) => {
     const filesUrl = [];
   };
-  const successCallBack = (result) => {
-    const imgSrc = result.info.secure_url;
-    console.log(imgSrc);
-  };
+  // const successCallBack = (result) => {
+  //   const imgSrc = result.info.secure_url;
+  //   console.log(imgSrc);
+  // };
   const eventImg = useRef(null);
   const { id } = useParams();
   return (
@@ -107,7 +107,7 @@ export const EventsEdit = (post) => {
                   ) : (
                     <>
                       <img src={recuitment} />
-                      <WidgetLoader />
+{/*                       <WidgetLoader />
                       <Widget
                         cloudName={"dy0raom2p"}
                         uploadPreset={"ui-path"}
@@ -124,7 +124,7 @@ export const EventsEdit = (post) => {
                           width: "100%",
                           border: "1px solid black",
                         }}
-                      />
+                      /> */}
                       {/* <label
                         for="imgInput"
                         className="w-full p-2 rounded-xl text-center border"
