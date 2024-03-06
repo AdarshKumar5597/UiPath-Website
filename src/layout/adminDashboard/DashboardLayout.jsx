@@ -46,6 +46,12 @@ export const AdminLayout = (children) => {
             >
               Posts
             </h1>
+            <h1
+              className="p-5 border w-full bg-[#f7f7fc] text-center rounded-full"
+              onClick={() => handleDashboard("gallery")}
+            >
+              Gallery
+            </h1>
           </div>
         </div>
         <div className="h-full w-4/5">
