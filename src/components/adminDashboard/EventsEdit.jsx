@@ -70,7 +70,7 @@ export const EventsEdit = (post) => {
                         size={70}
                         style={{ margin: "auto", color: "black" }}
                       />
-                      <WidgetLoader />
+                      {/* <WidgetLoader />
                       <Widget
                         cloudName={"dy0raom2p"}
                         uploadPreset={"ui-path"}
@@ -87,7 +87,7 @@ export const EventsEdit = (post) => {
                           // height: "100%",
                           // width: "100%",
                         }}
-                      />
+                      /> */}
 
                       {/* <input
                           ref={eventImg}
@@ -107,7 +107,7 @@ export const EventsEdit = (post) => {
                   ) : (
                     <>
                       <img src={recuitment} />
-{/*                       <WidgetLoader />
+                      {/*                       <WidgetLoader />
                       <Widget
                         cloudName={"dy0raom2p"}
                         uploadPreset={"ui-path"}
