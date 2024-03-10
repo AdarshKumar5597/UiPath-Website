@@ -32,7 +32,7 @@ const LatestPosts = () => {
           <div className="flex gap-8 flex-wrap justify-center flex-col md:flex-row">
             {latestPosts.map((post) => {
               return (
-                <div className="flex h-10/12 justify-between">
+                <div className="flex h-10/12 md:w-1/4 justify-between">
                   <div className="h-full w-full flex flex-col gap-2">
                     <img
                       src={post.image_link}
@@ -44,7 +44,7 @@ const LatestPosts = () => {
                       </p>
                       <CiCalendar size={15} style={{ display: "inline" }} />
                       <p className="text-xs font-medium text-[#4e515c]">
-                        January 12, 2024
+                        {post.date}
                       </p>
                       {/* <CiClock2 size={15} style={{ display: "inline" }} /> */}
                       <p className="text-xs font-medium text-[#4e515c]"></p>
