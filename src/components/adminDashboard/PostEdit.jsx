@@ -1,15 +1,14 @@
 import { CiCamera } from "react-icons/ci";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { useParams } from "react-router-dom";
 import recuitment from "./../../assets/images/latestPosts/WhatsApp Image 2024-01-15 at 00.32.31_e6178c13.jpg";
-//import { WidgetLoader, Widget } from "react-cloudinary-upload-widget";
+
+import handleImageUpload from "../../utils/uploadImages";
 export const PostEdit = () => {
   const [post, setPost] = useState({});
   const { id } = useParams();
-  // const successCallBack = (result) => {
-  //   const imgSrc = result.info.secure_url;
-  //   console.log(imgSrc);
-  // };
+  const postImg = useRef();
+  const updateImg = useRef();
   console.log(id);
   useEffect(() => {
     fetch(`${process.env.REACT_APP_BACKEND_BASE_URL}/post/${id}`, {
@@ -72,76 +71,36 @@ export const PostEdit = () => {
                 <div
                   className={`w-full flex flex-col gap-2  ${
                     id === "add"
-                      ? "justify-center relative items-center h-14"
+                      ? "justify-center relative items-center h-full"
                       : "h-full"
                   }`}
                 >
                   {id === "add" ? (
-                    <>
+                    <div
+                      className=" h-full w-full flex"
+                      onClick={() => postImg.current.click()}
+                    >
                       <CiCamera size={70} style={{ margin: "auto" }} />
-{/*                       <WidgetLoader />
-                      <Widget
-                        cloudName={"dy0raom2p"}
-                        uploadPreset={"ui-path"}
-                        buttonText={"Upload Photo"}
-                        onSuccess={successCallBack}
-                        style={{
-                          color: "black",
-                          border: "none",
-                          width: "120px",
-                          backgroundColor: "white",
-                          borderRadius: "4px",
-                          position: "absolute",
-                          bottom: "-20px",
-                          // height: "100%",
-                          // width: "100%",
-                        }}
-                      /> */}
-                      {/* <input
+                      <input
                         type="file"
-                        id="img"
-                        className="h-full w-full hidden"
+                        onChange={(e) => handleImageUpload(e, "posts")}
+                        className=" hidden"
+                        ref={postImg}
                       />
-                      <label
-                        for="img"
-                        className=" h-full w-full text-center underline text-blue-700"
-                      >
-                        <CiCamera
-                          size={70}
-                          style={{ margin: "auto", color: "black" }}
-                        />
-                        Select Post Image
-                      </label> */}
-                    </>
+                    </div>
                   ) : (
-                    <>
+                    <div
+                      className="h-full w-full flex"
+                      onClick={() => updateImg.current.click()}
+                    >
                       <img src={recuitment} />
-{/*                       <WidgetLoader />
-                      <Widget
-                        cloudName={"dy0raom2p"}
-                        uploadPreset={"ui-path"}
-                        buttonText={"Upload Photo"}
-                        onSuccess={successCallBack}
-                        style={{
-                          color: "black",
-                          border: "none",
-                          width: "120px",
-                          backgroundColor: "white",
-                          borderRadius: "4px",
-                          // height: "100%",
-                          padding: "20px",
-                          width: "100%",
-                          border: "1px solid black",
-                        }}
-                      /> */}
-                      {/* <label
-                        for="imgInput"
-                        className="w-full p-2 rounded-xl text-center border"
-                      >
-                        Change Image
-                      </label>
-                      <input type="file" id="imgInput" className="hidden" /> */}
-                    </>
+                      <input
+                        type="file"
+                        onChange={(e) => handleImageUpload(e, "posts")}
+                        className=" hidden"
+                        ref={updateImg}
+                      />
+                    </div>
                   )}
                 </div>
               </div>

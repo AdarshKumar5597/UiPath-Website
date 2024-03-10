@@ -1,15 +1,9 @@
-import logo from "./../../assets/images/leads/atri.jpg";
-import { FaRegUser } from "react-icons/fa";
 import { CiCamera } from "react-icons/ci";
-import { useState, useEffect } from "react";
-import { useParams } from "react-router-dom";
-//import { WidgetLoader, Widget } from "react-cloudinary-upload-widget";
+import { useState, useEffect, useRef } from "react";
+import handleImageUpload from "../../utils/uploadImages";
 export const ProjectEdit = () => {
   const [project, setProject] = useState({});
-  // const successCallBack = (result) => {
-  //   const imgSrc = result.info.secure_url;
-  //   console.log(imgSrc);
-  // };
+  const projectImg = useRef();
 
   return (
     <div className="h-full w-full p-2 flex gap-2  overflow-scroll overflow-x-hidden flex-col">
@@ -41,34 +35,18 @@ export const ProjectEdit = () => {
             </button>
           </div>
           <div className="h-full w-1/2 p-4">
-            <div className=" border-dashed border-4 rounded-xl h-full w-full">
+            <div
+              className=" border-dashed border-4 rounded-xl h-full w-full"
+              onClick={() => projectImg.current.click()}
+            >
               <div className="w-full flex flex-col h-full relative justify-center items-center">
                 <CiCamera size={70} style={{ margin: "auto" }} />
-{/*                 <WidgetLoader />
-                <Widget
-                  cloudName={"dy0raom2p"}
-                  uploadPreset={"ui-path"}
-                  buttonText={"Upload Photo"}
-                  onSuccess={successCallBack}
-                  style={{
-                    color: "black",
-                    border: "none",
-                    width: "120px",
-                    backgroundColor: "white",
-                    borderRadius: "4px",
-                    position: "absolute",
-                    bottom: "100px",
-                    // height: "100%",
-                    // width: "100%",
-                  }}
-                /> */}
-                {/* <input type="file" id="img" className="h-full w-full hidden" />
-                <label for="img">
-                  <CiCamera size={70} style={{ margin: "auto" }} />
-                  <p className=" underline text-blue-700">
-                    Select Project Image
-                  </p>
-                </label> */}
+                <input
+                  type="file"
+                  onChange={handleImageUpload}
+                  className=" hidden"
+                  ref={projectImg}
+                />
               </div>
             </div>
           </div>
