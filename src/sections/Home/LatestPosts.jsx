@@ -57,10 +57,7 @@ const LatestPosts = () => {
                         {post.description}
                       </p>
                     </div>
-                    <a
-                      href="https://www.instagram.com/p/C1_u4U8PyE5/?igsh=MmIzbDF3ajV5cjg="
-                      target="_blank"
-                    >
+                    <a href={post.link} target="_blank">
                       <div className="flex items-center justify-start">
                         <p className="mr-2 font-semibold text-sm">
                           {post.type}
