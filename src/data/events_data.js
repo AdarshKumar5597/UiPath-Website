@@ -12,7 +12,7 @@ export const eventsData = [
     name: "RECRUITMENT OF 1ST YEAR",
     descripton:
       "Calling all first-years! Join our dynamic society and experience a year filled with fun events and leadership roles. Grow as a person and professionally, while building your college network. It's the perfect way to shape your college experience!",
-    venue: "CAMPUS 14, SEMINAR HALL",
+    venue: "CAMPUS 3, BLOCK B",
     link: "https://www.instagram.com/p/C2d-ztQhZeT/?igsh=dno0Mzk5cDl3d3J5",
   },
   {
