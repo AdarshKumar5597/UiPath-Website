@@ -2,7 +2,7 @@ import FICPic from "../../assets/images/facultyImages/faculty1.jpg";
 import POCPic from "../../assets/images/facultyImages/faculty2.jpg";
 export const FIC = () => {
   return (
-    <div className="h-screen w-full bg-white mb-10">
+    <div className="h-[200vh] md:h-screen w-full bg-white mb-10">
       <div className="h-full flex-col justify-center items-center w-full flex md:flex-row">
         <div className=" h-full w-1/2 p-4">
           <span className="font-bold text-black w-full h-full flex flex-col justify-center items-center">
@@ -16,25 +16,32 @@ export const FIC = () => {
           </span>
         </div>
         <div className=" h-full md:py-36 md:pr-20 w-1/2 gap-8 flex md:flex-row flex-col">
-          <div className="h-full w-full md:w-1/2 mb-8">
+          <div className="h-full w-full md:w-1/2 mb-36">
             <img
               src={FICPic}
               className="h-full object-cover w-full"
               alt="faculty incharge"
             />
-            <h1 className=" text-center font-bold my-4 text-xl leading-8 font-oswald">
+            <h1 className=" text-center font-bold text-xl leading-8 font-oswald">
               FACULTY IN-CHARGE
             </h1>
+            <h2 className=" text-center font-bold mb-2">Subhra Debdas</h2>
+            <p className=" text-center font-normal">
+              Associate Dean University PG Program,Associate Professor -
+              Electrical Engineering
+            </p>
           </div>
-          <div className="h-full w-full  md:w-1/2">
+          <div className="h-full w-full  md:w-1/2 mb-20">
             <img
               src={POCPic}
               alt="POC"
               className="h-full object-cover w-full"
             />
-            <h1 className=" text-center font-bold my-4 text-xl leading-8 font-oswald">
+            <h1 className=" text-center font-bold text-xl leading-8 font-oswald">
               POINT OF CONTACT
             </h1>
+            <h2 className=" text-center font-bold mb-2">Dr. Abhishek Ray</h2>
+            <p className=" text-center font-normal">Professor and Dean T&P</p>
           </div>
         </div>
       </div>
