@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Link, NavLinks, useLocation } from "react-router-dom";
 import { IoMenu } from "react-icons/io5";
 import { IoIosClose } from "react-icons/io";
-import Logo from "../../assets/images/udsc.png";
+import Logo from "../../assets/icon/logo.png";
 function Navbar() {
   const [isOpen, setIsOpen] = useState(true);
   const toggleNavbar = () => {
@@ -54,7 +54,11 @@ function Navbar() {
   return (
     <div className="flex fixed top-0 font-semibold text-xl w-full bg-opacity-100 bg-[#fedad3] justify-between px-10 items-center py-1 z-50">
       <Link to="/">
-        <img src={Logo} alt="logo" className="h-[100px] w-[150px]" />
+        <img
+          src={Logo}
+          alt="logo"
+          className="h-[100px] object-contain w-[150px]"
+        />
       </Link>
       <div className="hidden md:flex justify-evenly items-center gap-3 w-[50vw]">
         {NavItems.map((element) => (

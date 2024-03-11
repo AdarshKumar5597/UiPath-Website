@@ -12,7 +12,7 @@ export const DomainLayout = () => {
           OUR DOMAINS
         </h1>
       </div>
-      <div className="h-full py-24 flex bg-[#fedad3] flex-wrap">
+      <div className="h-full py-24 flex bg-[#fedad3] flex-wrap gap-8">
         {domainData.map((domain) => {
           return (
             <div className="h-1/2 flex flex-col">
@@ -24,17 +24,9 @@ export const DomainLayout = () => {
                   <p className="text-center">{domain.description}</p>
                 </div>
                 <div className="w-full md:w-1/2 h-full justify-around gap-4 flex">
-                  {domain.leads.map((lead) => {
-                    return (
-                      <div className="h-1/2 w-1/2 md:w-1/3">
-                        <img src={img} className="h-56 w-56" />
-                        <div className="w-full h-fit flex flex-col justify-center items-center">
-                          <h1>Name</h1>
-                          <p className=" font-bold">Position</p>
-                        </div>
-                      </div>
-                    );
-                  })}
+                  <div className="h-full w-full md:w-1/3">
+                    <img src={domain.image} className="h-full w-full" />
+                  </div>
                 </div>
               </div>
             </div>
