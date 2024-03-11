@@ -6,6 +6,7 @@ const ProjectStyle2 = ({
   // title,
   // description,
   last = false,
+  index = 0,
 }) => {
   return (
     <div className="mx-4 relative w-full md:w-[32%] hover:shadow-md hover:text-red-500 p-4">
@@ -15,8 +16,8 @@ const ProjectStyle2 = ({
         {description}
       </p> */}
       {last && (
-        <a href="gallery/_id">
-          <h1 className=" z-10 font-semibold top-32 left-24 absolute">
+        <a href={`gallery/${index}`}>
+          <h1 className=" z-10 font-semibold top-28 left-32 absolute">
             VIEW MORE
           </h1>
         </a>

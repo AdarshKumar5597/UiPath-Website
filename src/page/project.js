@@ -13,11 +13,11 @@ export default function ProjectPage() {
       <Navbar />
       <ProjectHeading />
       <div className="h-full pb-20 w-full">
-        {galleryData.map((gallery) => {
+        {galleryData.map((gallery, index) => {
           return (
             <section className="md:mx-40 mx-4 pt-10">
               <h1 className=" border w-full font-semibold text-xl shadow-xl rounded-lg p-4 mb-8">
-                ORIENTATION SYNERGY
+                {gallery.title}
               </h1>
               <ProjectItems1 photos={[gallery.photos[0], gallery.photos[1]]} />
               <ProjectItems2
@@ -26,6 +26,7 @@ export default function ProjectPage() {
                   gallery.photos[3],
                   gallery.photos[4],
                 ]}
+                index={index}
               />
               {/* <ProjectItems1 /> */}
             </section>
