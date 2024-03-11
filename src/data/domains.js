@@ -19,13 +19,13 @@ export const domainData = [
   },
   {
     name: "Web Development",
-    image: require("../assets/images/A handsome man - he is an illustrator. Sitting in .jpg"),
+    image: require("../assets/images/minimalist design.jpg"),
     description:
       "Web development is a vital domain within the tech society, focusing on creating and maintaining websites and web applications. It encompasses front-end development, where user interfaces are designed and implemented using technologies like HTML, CSS, and JavaScript, as well as back-end development, which involves server-side programming and database management. Web development plays a crucial role in shaping the digital landscape, enabling businesses and individuals to connect, communicate, and transact online.",
   },
   {
     name: "Cloud Automation",
-    image: require("../assets/images/Create a visually appealing and insightful image r.jpg"),
+    image: require("../assets/images/Warm graphic symbol.jpg"),
     description:
       "Cloud automation involves the use of software and tools to automatically provision, manage, and optimize cloud infrastructure and services. It enables organizations to streamline operations, improve efficiency, and reduce manual intervention in tasks such as deployment, scaling, and resource management. As a crucial domain in today's tech society, cloud automation empowers businesses to leverage the scalability and flexibility of cloud computing while minimizing operational overhead.",
   },
