@@ -1,5 +1,5 @@
 import React from 'react'
-import UserPic from '../../assets/images/why-uipath.jpg'
+import UserPic from '../../assets/images/why-uipath.jpeg'
 
 const WhyUi = () => {
   return (
